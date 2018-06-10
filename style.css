@@ -89,7 +89,7 @@ body, html {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
-    display: unset;
+    display: block;
   }
 }
 
@@ -166,8 +166,11 @@ img {
   height: auto;
 }
 @media screen and (max-width: 560px) {
-	.container p{
-		text-align: center;
+	.container {
+		display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
 	}
 }
 @media screen and (max-width: 1020px){
@@ -175,9 +178,6 @@ img {
 		grid-template-columns: 1fr;
 		grid-row-gap: 10px;
 		text-align: center;
-	}
-	.container p{
-
 	}
 	.container img{
 	}
