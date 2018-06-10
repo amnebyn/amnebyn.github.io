@@ -1,15 +1,18 @@
 <!doctype html>
-<html>
+<html lang="sv">
+  <head>
+    <title>Amnebyn</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ämnebyn en gård i Steneby, Dalslånged där vi hyr ut
+     grarages, längehet och verkstad. Konakta oss gärna om ni är sugna på att hyra">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Magnus Bryntheson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  </head>
   <body>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="Ämnebyn en gård i Steneby, Dalslånged där vi hyr ut
-       grarages, längehet och verkstad. Konakta oss gärna om ni är sugna på att hyra">
-      <meta name="keywords" content="HTML,CSS,JavaScript">
-      <meta name="author" content="Magnus Bryntheson">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    </head>
     <header>
       <div class="topnav" id="myTopnav">
       <a href="#section1" class="active">Hem</a>
@@ -20,7 +23,6 @@
         </a>
       </div>
     </header>
-  <body>
     <div id="section1" class="bg"></div>
 
   <div id="section2">
@@ -44,32 +46,25 @@
         <br>
         <h2 class="Huvudtext">Kontakt</h2>
         <div class="boxmap">
-          <div id="jsoff">
-            <p id="jsoffText">Sätt på JavaScript för karta</p>
-          <img src="jsoff.png" alt="Sätt på JavaScript för vägledning">
-        </div>
+          <img id="jsoff" src="apps.png" alt="Sätt på JavaScript för vägledning">
           <div id="map"></div>
-          <span id="textruta">
+          <div id="textruta">
             <h2>Address: </h2><p>Gårdsgatan 1 </p>
             <h2> Email: </h2><p>mail@example.com </p>
             <h2>Tele: </h2><p> 070 123 123 12</p>
-          </span>
+          </div>
         </div>
     </div>
   <a class="footer" href="#top">
     <div id = "footer">
-      <p><j class="arrow up"></j></p>
+      <p><i class="arrow up"></i></p>
       <p> By: Magnus Bryntheson te2a <br> Detta är endast ett skolprojekt </p>
     </div>
   </a>
-</div>
 <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxxW6dQt25_MHQgy9rkrXUMQluwtkvrgc&callback=initMap"></script>
     <script src="script.js"></script>
     <script src="karta.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxxW6dQt25_MHQgy9rkrXUMQluwtkvrgc&callback=initMap"></script>
   </body>
 </html>

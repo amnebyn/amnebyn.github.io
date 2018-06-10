@@ -34,11 +34,6 @@ $(document).ready(function(){
     }, 2000);
 });
 
-$('a').on('click', function(){
-    $('a').removeClass('active');
-    $(this).addClass('active');
-});
-
 function topnav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -51,3 +46,8 @@ var clickbtn = document.getElementById("clickbtn");
 clickbtn.onclick = function(){
   topnav();
 }
+$('a').on('click', function(){
+    $('a').removeClass('active');
+    $(this).addClass('active');
+
+});
