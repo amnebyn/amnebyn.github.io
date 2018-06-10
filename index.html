@@ -10,14 +10,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
     </head>
     <header>
 
       <div class="topnav" id="myTopnav">
+      <a href="#section1" class="active">Hem</a>
+      <a href="#section2">Lägenhet/Garage</a>
         <a href="#section3">Kontakt</a>
-        <a href="#section4">Tjänster</a>
-        <a href="#section2">Lägenhet/Garage</a>
-        <a href="#section1" class="active">Hem</a>
         <a class="icon" id="clickbtn">
         <i class="fa fa-bars"></i>
         </a>
@@ -27,83 +28,42 @@
     <div id="section1" class="bg"></div>
 
   <div id="section2">
-    <h2 class="Huvudtext">Lägenhet</h2>
+    <br>
+    <br>
+    <h2 class="Huvudtext">Lägenhet/Garage</h2>
       <div class="container">
-        <p>Det finns lägenheter att hyra med internett kök 2 sovrum ett vardagsrum och 2 toaletter.
-        Det finns el, vatten allt det nödvändiga.
-    <br>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        <img src="apps.jpg" alt="Smiley face" height="400" width="400">
-        <img src="garage.jpg" alt="Smiley face" height="400" width="400">
+        <p>Det finns lägenheter att hyra med internet, kök, 2 sovrum, vardagsrum och 2 toaletter.
+        Det finns el, vatten och allt det nödvändiga. Många förster för fin utsikt mot horisonten.
+        Golven har heltäckningsmatta på sig, huset är gjort av fura.</p>
+        <img src="apps.jpg" alt="Apps">
+        <img src="garage.jpg" alt="Garage">
         <p>Det finns 2 garage samt en stor verkstad med matsal samt stora förvaringsutrymmen med hyllor.
            Smörjgrop för den som har tänkt att smörja många olika maskiner mm. Det finns oljefat att få olja ur enkelt.
-           Tillgång till vatten kontor 2 toaletter samt övervåning för förvaring, winch i taket som klarar 2 ton.
-      <br>     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           </p>
+           Tillgång till vatten, kontor, 2 toaletter samt övervåning för förvaring, winch i taket som klarar 2 ton. </p>
       </div>
   </div>
 
-  <div id="section4">
-    <h2 class="Huvudtext">Tjänster</h2>
+      <div id="section3">
+        <h2 class="Huvudtext">Kontakt</h2>
+        <div class="boxmap">
+          <img id="jsoff" src="apps.jpg" alt="Sätt på JavaScript för vägledning">
 
-    <span id="textruta">
-      <p>Address: Gårdsgatan 597 <br>
-        Email: mail@example.com <br>
-        Vi finns på en gård i dalsland längst väg 172.</p>
-    </span>
-      <div class="SlideContainer">
-          <div class="jsoff">
-            <img class="jsoff" src="tjänst0">
-            <h1 class="jsoff">Vi kan klippa gräs</h1>
-          </div>
-        <div class="mySlides fade">
-          <img src="tjänst0">
-            <div class="numbertext">1 / 3</div>
-          <div class="text">Vi kan lyfta tunga saker</div>
+          <div id="map"></div>
+          <span id="textruta">
+            <h2>Address: </h2><p>Gårdsgatan 1 </p>
+            <h2> Email: </h2><p>mail@example.com </p>
+            <h2>Tele: </h2><p> 070 123 123 12</p>
+          </span>
         </div>
-        <div class="mySlides fade">
-          <img src="tjänst1">
-            <div class="numbertext">2 / 3</div>
-          <div class="text">Vi kan röjasly</div>
-        </div>
-        <div class="mySlides fade">
-          <img src="tjänst2">
-            <div class="numbertext">3 / 3</div>
-          <div class="text">Vi kan klippa gräs</div>
-        </div>
-        <a id="prevButton">&#10094;</a>
-        <a id="nextButton">&#10095;</a>
-      </div>
-
-      <br>
-
-      <div style="text-align:center" id="bottomSlider">
-        <span id="dot1" class="dot"></span>
-        <span id="dot2" class="dot"></span>
-        <span id="dot3" class="dot"></span>
-        <br>
-        <a id="auto">Click for auto</a>
-      </div>
-
-  </div>
-
-    <div id="section3">
-      <h2 class="Huvudtext">Location</h2>
-      <div class="boxmap">
-        <div id="map"></div>
-        <span id="textruta">
-          <p>Address: Gårdsgatan 597 <br>
-            Email: mail@example.com <br>
-            Vi finns på en gård i dalsland längst väg 172.</p>
-        </span>
-      </div>
-  </div>
+    </div>
   <a class="footer" href="#top">
     <div id = "footer">
       <p><j class="arrow up"></j></p>
-      <p> By: Magnus Bryntheson te2a <br> Kontakt: 070 123 12 13 <br> This is a school project </p>
+      <p> By: Magnus Bryntheson te2a <br> Detta är endast ett skolprojekt </p>
     </div>
   </a>
 </div>
+<br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxxW6dQt25_MHQgy9rkrXUMQluwtkvrgc&callback=initMap">
     </script>

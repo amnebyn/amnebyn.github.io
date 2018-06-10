@@ -1,12 +1,12 @@
 function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 58.94956329999999, lng: 12.214956099999995},
+    center: {lat: 58.991429, lng: 12.462891},
     zoom: 17
   });
 
   var marker = new google.maps.Marker({
-  	position: {lat: 58.94956329999999, lng: 12.214956099999995},
+  	position: {lat: 58.991429, lng: 12.462891},
   	map: map
   })
 
@@ -43,7 +43,7 @@ function initMap() {
   directionsDisplay.setMap(map);
   function calcRoute(pos) {
     var start = pos;
-    var end = {lat: 58.94956329999999, lng: 12.214956099999995};
+    var end = {lat: 58.991429, lng: 12.462891};
     var request = {
       origin: start,
       destination: end,

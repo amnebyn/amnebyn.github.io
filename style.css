@@ -46,60 +46,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 body, html {
     height: 100%;
+
 }
 
-.bg {
-    background-image: url("bakgrund0.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-div.boxmap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#textruta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 2%;
-  width: 46%;
-  font-size: 150%;
-  border: solid 2px;
-}
-#map {
-  height: 300px;
-  width: 50%;
-}
-
-#footer {
-    position: relative;
-    background-color: #F0F0F0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-a.footer {
-  text-decoration: none;
-  color: black;
-}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #F0F0F0;
     position: fixed;
     margin: 0;
     width: 100%;
+    z-index: 10000;
 }
 
 /* Style the links inside the navigation bar */
@@ -126,18 +84,6 @@ a.footer {
 .topnav .icon {
     display: none;
 }
-
-.container {
-  display: grid;
-  grid-gap: 1%;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-}
-
-img {
-  width: 100%;
-}
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -161,6 +107,78 @@ img {
     text-align: left;
   }
 }
+.bg {
+    background-image: url("bakgrund0.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.boxmap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 126px;
+}
+#textruta {
+  width: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  font-size: 20px;
+  border: solid 2px;
+}
+#textruta #textruta p{
+  display: inline-block;
+}
+#map {
+  display: none;
+  height: 500px;
+  width: 50%;
+}
+#jsoff{
+    height: 500px;
+    width: 50%;
+}
+.container {
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  padding: 0 136px;
+
+}
+.container p{
+  display: flex;
+  font-size: 28px;
+  font-family: 'Cabin', sans-serif;
+  align-items: center;
+  padding: 24px;
+
+}
+img {
+  width: 100%;
+}
+.container img{
+  width: 100%;
+  height: auto;
+}
+#footer {
+    position: relative;
+    background-color: #F0F0F0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+a.footer {
+  text-decoration: none;
+  color: black;
+}
 .up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
@@ -170,98 +188,4 @@ j {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-}
-
-.SlideContainer {
-  max-width: 300px;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
-  visibility:hidden;
-}
-
-.jsoff {
-  visibility: visible;
-}
-
-.mySlides fade{
-display: none
-}
-.jsoff {
-  visibility: visible;
-}
-/* Slide knapparna höger och vänster */
-#prevButton, #nextButton {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 10px;
-  margin-top: -22px;
-  color: white;
-  border-style: solid;
-  border-width: 3px black;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 3px;
-}
-/* Häger slide knapp */
-#nextButton {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* Hover över tillbaka och nästa bild knapparna */
-#prevButton:hover, #nextButton:hover {
-  background-color: white;
-}
-
-/* Texten under bilden */
-.text {
-  color: white;
-  font-size: 15px;
-  padding: 10px 10px;
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  text-align: center;
-}
-/* Text som förklarar bilden */
-.numbertext {
-  color: white;
-  font-size: 12px;
-  padding: 10px 10px;
-  position: absolute;
-  bottom: 0;
-
-}
-/* Prickar under bilden så man kan hoppa till en bild */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-/* när man trycker eller håller på slider knapp blir de svarta */
-.dot.active, .dot:hover {
-  background-color: black;
-}
-/* För att fadea in bilderna ser bättre ut*/
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
 }
